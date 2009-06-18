@@ -4,7 +4,7 @@ unless defined?(Whenever)
   # Hoping to load Rails' Rakefile
   begin
     load 'Rakefile'
-  rescue LoadError => e
+  rescue LoadError, Gem::Exception => e
     nil
   end
 end
